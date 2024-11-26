@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 15rem;
+}
+
+input, textarea {
+  padding: 12px;
+  margin: 12px 0;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.note_app__header {
+   
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    border-bottom: 1px solid #aaa;
+  }
+  
+  .note_app__header h1 {
+    margin: 8px 0;
+    flex: 1;
+    color: white;
+  }
+  
+  
+  .note_app__body {
+    max-width: 1000px;
+    margin: 16px auto;
+    padding: 12px;
+  }
+  
+  .note_app__body h2 {
+    font-weight: normal;
+    margin: 16px 0;
+  }
+  
+  .note_input {
+   
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 48px;
+    padding: 100px 16px 16px 16px;
+  }
+  
+  .note_input input, .note_input textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  .note_input__title {
+    font-weight: bold;
+  }
+  
+  .note_input__title__char_limit {
+    font-size: 14px;
+    text-align: right;
+    color: #aaa;
+  }
+  
+  .note_input__body {
+    min-height: 175px;
+  }
+  
+  .note_input button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  @media only screen and (min-width: 500px) {
+    .notes_list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .notes_list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .note_search input {
+      min-width: 400px;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .notes_list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

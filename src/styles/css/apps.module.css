@@ -1,0 +1,47 @@
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary);
+  }
+  
+  
+  .note_app_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    border-bottom: 1px solid #aaa;
+    
+    flex-wrap: wrap;
+  }
+  
+  .note_app_body {
+    
+    max-width: 1000px;
+  margin: 16px auto;
+  padding: 12px;
+  
+  flex-wrap: wrap;
+ 
+  }
+
+  @media only screen and (min-width: 500px) {
+    .note_app_body {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .note_app_body{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+   
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .note_app_body {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
